@@ -71,6 +71,16 @@ h3 {
     margin-bottom: 2.5rem;
 }
 
+.wave {
+    background-image: url(../img/wave.svg);
+    filter: invert(100%) sepia(55%) saturate(0%) hue-rotate(195deg) brightness(108%) contrast(93%);
+    width: 100%;
+}
+
+.wave-rotate{
+    transform: rotate(180deg);
+}
+
 /* utility  */
 .debug {
 
@@ -316,15 +326,6 @@ ul {
 }
 
 /* community  */
-#community::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: url(../img/wave.svg);
-}
-
 .community-flex-container {
     display: flex;
     flex-direction: row-reverse;
@@ -333,15 +334,11 @@ ul {
 #community {
     min-height: 40rem;
     background-color: var(--dis-light);
-}
-
-#community {
     div div:nth-child(1) {
         text-align: right;
         min-width: 70%;
     }
 }
-
 
 /* fandom  */
 #fandom {
