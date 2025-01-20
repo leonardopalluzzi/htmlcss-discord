@@ -44,6 +44,12 @@
     }
 }
 
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
 /* utility  */
 .debug {
 
@@ -258,17 +264,29 @@ ul {
     min-height: 30rem;
 }
 
+.section-content{
+    padding-top: 8rem;
+}
+
 #invite-only,
 #fandom {
     min-height: 40rem;
 }
 
 .section-content div:nth-child(1) {
-    min-width: 60%;
+    min-width: 70%;
+    max-width: 100%;
+    text-align: center;
 }
 
 .section-content div:nth-child(2) {
-    min-width: 40%;
+    min-width: 20%;
+    max-width: 100%;
+    padding-top: 1.5rem;
+    p{
+        font-size: 1.2rem;
+        word-spacing: 1px;
+    }
 }
 
 /* community  */
