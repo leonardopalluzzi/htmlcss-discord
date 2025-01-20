@@ -44,10 +44,30 @@
     }
 }
 
-h2{
+.btn-blue {
+    background-color: var(--dis-cta2);
+    padding: 0.8rem 1.6rem;
+    border-style: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dis-lighter);
+
+    &:hover {
+        background-color: var(--dis-cta)
+    }
+}
+
+h2 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
 }
 
 /* utility  */
@@ -224,21 +244,25 @@ ul {
         font-weight: 700;
         margin-bottom: 3rem;
     }
-    p{
+
+    p {
         font-size: 1.5rem;
         font-weight: 500;
         margin-bottom: 2rem;
     }
-    .btn-white{
+
+    .btn-white {
         font-size: 1.3rem;
         padding: 1rem 2rem;
         margin-right: 1.5rem;
         font-weight: 600;
-        span{
+
+        span {
             font-size: 1.5rem;
         }
     }
-    .btn-black{
+
+    .btn-black {
         font-size: 1.3rem;
         padding: 1rem 2rem;
         margin-right: 1.5rem;
@@ -264,7 +288,7 @@ ul {
     min-height: 30rem;
 }
 
-.section-content{
+.section-content {
     padding-top: 8rem;
     margin-bottom: 8rem;
 }
@@ -283,7 +307,8 @@ ul {
     min-width: 20%;
     max-width: 100%;
     padding-top: 1.5rem;
-    p{
+
+    p {
         font-size: 1.2rem;
         word-spacing: 1px;
     }
@@ -300,12 +325,19 @@ ul {
     background-color: var(--dis-light);
 }
 
-#community{
-    div div:nth-child(1){
+#community {
+    div div:nth-child(1) {
         text-align: right;
         min-width: 70%;
     }
 }
+
+
+/* fandom  */
+#fandom {
+    margin-bottom: 8rem;
+}
+
 
 /* technology  */
 #tech {
@@ -313,10 +345,33 @@ ul {
     justify-content: center;
     align-items: center;
     min-height: 50rem;
+    text-align: center;
+    padding-top: 8rem;
+    background-color: var(--dis-light);
 }
 
 #tech-content {
     min-height: 45rem;
+
+    img {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+#last-cta {
+    padding: 2.5rem;
+    background-image: url(../img/stars.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* footer  */
