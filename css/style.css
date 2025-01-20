@@ -1,222 +1,275 @@
 /* common  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+:root {
+    --dis-main: #3161e0;
+    --dis-cta: #23272a;
+    --dis-light: #f6f6f6;
+    --dis-lighter: white;
+    --dis-cta2: #8ea1e1;
+    --dis-ft-title: #7188d8;
 }
 
 /* utility  */
-.debug{
-        
+.debug {
 
-    header{
+
+    header {
         background-color: skyblue;
         border: 1px dashed black;
     }
-    #menu{
+
+    #menu {
         background-color: gold;
         border: 1px dashed black;
     }
+
     #menu div:nth-child(2) {
         border: 1px dashed black;
     }
-    #jumbotron{
+
+    #jumbotron {
         background-color: blue;
         border-bottom: 4px solid skyblue;
     }
-    #jumbotron-content{
+
+    #jumbotron-content {
         background-color: palevioletred;
         border: 1px dashed black;
     }
-    #invite-only, #fandom{
+
+    #invite-only,
+    #fandom {
         background-color: white;
         border: 1px dashed black;
     }
-    .section-content div:nth-child(1){
+
+    .section-content div:nth-child(1) {
         background-color: cornflowerblue;
         border: 1px dashed black;
     }
-    .section-content div:nth-child(2){
+
+    .section-content div:nth-child(2) {
         background-color: pink;
         border: 1px dashed black;
     }
-    #community{
+
+    #community {
         background-color: lightgrey;
         border: 1px dashed black;
     }
-    #tech{
+
+    #tech {
         background-color: lightgrey;
         border: 1px dashed black;
     }
-    #tech-content{
+
+    #tech-content {
         background-color: green;
         border: 1px dashed black;
     }
-    footer{
+
+    footer {
         background-color: black;
         border: 1px dashed black;
-    }.up-foot-container div:nth-child(1){
+    }
+
+    .up-foot-container div:nth-child(1) {
         background-color: pink;
         border: 1px dashed black;
     }
-    .up-footer-section{
+
+    .up-footer-section {
         background-color: turquoise;
         border: 1px dashed black;
     }
-    #flex-foot-content button{
+
+    #flex-foot-content button {
         background-color: pink;
         border: 1px dashed black;
     }
-    #flex-foot-content{
+
+    #flex-foot-content {
         background-color: aquamarine;
         border: 1px dashed black;
     }
-    #flex-foot-content div{
+
+    #flex-foot-content div {
         background-color: pink;
         border: 1px dashed black;
     }
 }
 
 /* header  */
-.hd-flex-container{
-    display: flex;
-    justify-content: center;
-}
-
-.header-size{
-    width: 60%;
-    margin: auto;
-}
-
-header{
-    min-height: 3rem;
-}
-
-#menu.hd-flex-container div:nth-child(2){
-    width: 70%;
-    text-align: center;
-    padding: 5px;
-}
-
-#menu.hd-flex-container div:nth-child(1){
-    width: 15%;
-    padding: 5px;
-}
-
-#menu.hd-flex-container div:nth-child(3){
-    width: 15%;
-    text-align: right;
-    padding: 5px;
-}
-
-ul{
-    list-style: none;
-    li{
-        margin-right: 1rem;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-        &:hover{
-            text-decoration: underline;
-            color: blue;
-        }
-    }
-}
-
-/* jumbotron  */
-.jt-flex-container{
-    display: flex;
-    justify-content: center;
-}
-
-.jt-section-size{
-    width: 50%;
-    margin: auto;
-    min-height: 30rem;
-}
-
-#jumbotron{
-    min-height: 40rem;
-}
-
-
-/* common invite, community, fandom, sections  */
-.section-flex-container{
+.hd-flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content-flex-container{
+.header-size {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    min-height: 3rem;
+    background-color: var(--dis-main);
+    padding: 1rem 0;
+}
+
+#menu.hd-flex-container div:nth-child(2) {
+    width: 70%;
+    text-align: center;
+    padding: 5px;
+    li{
+        margin: 0 1.5rem;
+    }
+}
+
+#menu.hd-flex-container div:nth-child(1) {
+    width: 15%;
+    padding: 5px;
+}
+
+#menu.hd-flex-container div:nth-child(3) {
+    width: 15%;
+    text-align: right;
+    padding: 5px;
+
+    button {
+        background-color: var(--dis-lighter);
+        padding: 0.7rem 1rem;
+        border-style: none;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        &:hover {
+            background-color: var(--dis-cta2)
+        }
+    }
+}
+
+ul {
+    list-style: none;
+
+    li {
+        margin-right: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--dis-lighter);
+
+        &:hover {
+            text-decoration: underline;
+            color: var(--dis-cta2);
+        }
+    }
+}
+
+/* jumbotron  */
+.jt-flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.jt-section-size {
+    width: 50%;
+    margin: auto;
+    min-height: 30rem;
+}
+
+#jumbotron {
+    min-height: 40rem;
+}
+
+
+/* common invite, community, fandom, sections  */
+.section-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-flex-container {
     display: flex;
 }
 
-.section-size{
+.section-size {
     width: 70%;
     margin: auto;
     min-height: 30rem;
 }
 
-#invite-only, #fandom{
+#invite-only,
+#fandom {
     min-height: 40rem;
 }
 
-.section-content div:nth-child(1){
+.section-content div:nth-child(1) {
     min-width: 60%;
 }
 
-.section-content div:nth-child(2){
+.section-content div:nth-child(2) {
     min-width: 40%;
 }
 
 /* community  */
-.community-flex-container{
+.community-flex-container {
     display: flex;
     flex-direction: row-reverse;
 }
 
-#community{
+#community {
     min-height: 40rem;
 }
 
 /* technology  */
-#tech{
+#tech {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 50rem;
 }
 
-#tech-content{
+#tech-content {
     min-height: 45rem;
 }
 
 /* footer  */
-.flex-footer{
+.flex-footer {
     display: flex;
     justify-content: center;
 }
 
-.up-foot-container{
+.up-foot-container {
     display: flex;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
-.up-foot-container div:nth-child(1){
+.up-foot-container div:nth-child(1) {
     min-width: 35%;
 }
 
-.up-footer-section{
+.up-footer-section {
     min-width: 16.25%;
 }
 
-hr{
+hr {
     background-color: white;
 }
 
-#flex-foot-content{
+#flex-foot-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -224,12 +277,12 @@ hr{
     margin-top: 1.5rem;
 }
 
-#flex-foot-content div{
+#flex-foot-content div {
     padding: 0.2rem;
     font-size: 0.8rem;
 }
 
-#flex-foot-content button{
+#flex-foot-content button {
     padding: 0.2rem;
     font-size: 0.8rem;
 }
