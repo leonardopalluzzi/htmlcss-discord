@@ -266,6 +266,7 @@ ul {
 
 .section-content{
     padding-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 #invite-only,
@@ -275,8 +276,7 @@ ul {
 
 .section-content div:nth-child(1) {
     min-width: 70%;
-    max-width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .section-content div:nth-child(2) {
@@ -297,6 +297,14 @@ ul {
 
 #community {
     min-height: 40rem;
+    background-color: var(--dis-light);
+}
+
+#community{
+    div div:nth-child(1){
+        text-align: right;
+        min-width: 70%;
+    }
 }
 
 /* technology  */
