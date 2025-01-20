@@ -9,7 +9,7 @@
 }
 
 :root {
-    --dis-main: #3161e0;
+    --dis-main: #255ee9;
     --dis-cta: #23272a;
     --dis-light: #f6f6f6;
     --dis-hr: rgb(246, 246, 246, 0.2);
@@ -316,6 +316,15 @@ ul {
 }
 
 /* community  */
+#community::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave.svg);
+}
+
 .community-flex-container {
     display: flex;
     flex-direction: row-reverse;
@@ -385,26 +394,31 @@ footer {
         font-weight: 700;
         margin-bottom: 1.5rem;
         color: var(--dis-ft-title);
-    } 
-    dl{
+    }
+
+    dl {
         display: inline-block;
     }
-    dt{
+
+    dt {
         font-size: 1.5rem;
         font-weight: 700;
         margin: 0;
         color: var(--dis-ft-title);
         margin-bottom: 1rem;
     }
-    dd{
+
+    dd {
         color: var(--dis-lighter);
         margin-bottom: 1rem;
         font-size: 1.2rem;
         font-weight: 700;
-        a{
+
+        a {
             text-decoration: none;
             color: var(--dis-lighter);
-            &:hover{
+
+            &:hover {
                 color: var(--dis-cta2);
                 text-decoration: underline;
             }
@@ -422,21 +436,23 @@ footer {
     align-items: top;
     margin-top: 5rem;
     margin-bottom: 2rem;
-        select {
-            background-color: var(--dis-cta);
-            color: var(--dis-lighter);
-            padding: 0.4rem;
-            font-size: 0.9rem;
-            border-color: var(--dis-cta);
-            vertical-align: bottom;
-        }
-        img {
-            width: 8%;
-        }
-    
+
+    select {
+        background-color: var(--dis-cta);
+        color: var(--dis-lighter);
+        padding: 0.4rem;
+        font-size: 0.9rem;
+        border-color: var(--dis-cta);
+        vertical-align: bottom;
+    }
+
+    img {
+        width: 8%;
+    }
+
 }
 
-.social-icons{
+.social-icons i {
     color: var(--dis-lighter);
     padding-top: 1rem;
     font-size: 1.5rem;
@@ -456,11 +472,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 6rem;
     min-height: 3.5rem;
     margin-top: 1.5rem;
     border-top: 1px solid var(--dis-hr);
-    .btn-blue{
+
+    .btn-blue {
         padding: 0.7rem;
         font-size: 1rem;
     }
