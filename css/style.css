@@ -12,6 +12,7 @@
     --dis-main: #3161e0;
     --dis-cta: #23272a;
     --dis-light: #f6f6f6;
+    --dis-hr: rgb(246, 246, 246, 0.2);
     --dis-lighter: white;
     --dis-cta2: #8ea1e1;
     --dis-ft-title: #7188d8;
@@ -450,16 +451,19 @@ footer {
     min-width: 16.25%;
 }
 
-hr {
-    background-color: var(--dis-lighter);
-}
-
 #flex-foot-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     min-height: 3.5rem;
     margin-top: 1.5rem;
+    border-top: 1px solid var(--dis-hr);
+    .btn-blue{
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
 }
 
 #flex-foot-content div {
