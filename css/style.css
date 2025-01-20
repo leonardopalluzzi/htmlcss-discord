@@ -17,6 +17,33 @@
     --dis-ft-title: #7188d8;
 }
 
+.btn-white {
+    background-color: var(--dis-lighter);
+    padding: 0.7rem 1rem;
+    border-style: none;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--dis-cta2)
+    }
+}
+
+.btn-black {
+    background-color: var(--dis-cta);
+    padding: 0.7rem 1rem;
+    border-style: none;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dis-lighter);
+
+    &:hover {
+        background-color: var(--dis-cta2)
+    }
+}
+
 /* utility  */
 .debug {
 
@@ -129,7 +156,8 @@ header {
     width: 70%;
     text-align: center;
     padding: 5px;
-    li{
+
+    li {
         margin: 0 1.5rem;
     }
 }
@@ -143,19 +171,6 @@ header {
     width: 15%;
     text-align: right;
     padding: 5px;
-
-    button {
-        background-color: var(--dis-lighter);
-        padding: 0.7rem 1rem;
-        border-style: none;
-        border-radius: 2rem;
-        font-size: 0.9rem;
-        font-weight: 600;
-
-        &:hover {
-            background-color: var(--dis-cta2)
-        }
-    }
 }
 
 ul {
@@ -190,6 +205,39 @@ ul {
 
 #jumbotron {
     min-height: 40rem;
+    background-color: var(--dis-main);
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: var(--dis-lighter);
+    text-align: center;
+}
+
+#jumbotron-content {
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    .btn-white{
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        margin-right: 1.5rem;
+        font-weight: 600;
+        span{
+            font-size: 1.5rem;
+        }
+    }
+    .btn-black{
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        margin-right: 1.5rem;
+        font-weight: 600;
+    }
 }
 
 
